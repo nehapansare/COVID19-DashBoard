@@ -253,13 +253,15 @@ function App() {
 
       
       <div className="flex flex-col lg:flex-row gap-6">
-  <div className="bg-white p-4 rounded shadow w-full lg:w-[50%] h-[400px]">
-    <Line data={lineChartData} options={lineChartOptions} />
-  </div>
+      <div className="flex-1 bg-white p-4 rounded shadow h-96">
+  <Line data={lineChartData} options={lineChartOptions} />
+</div>
 
-  <div className="flex-1 bg-white p-4 rounded shadow min-h-[400px] flex items-center justify-center">
+<div className="flex-1 bg-white p-4 rounded shadow h-96 flex items-center justify-center">
   <Pie data={pieChartData} options={pieChartOptions} />
 </div>
+
+
 
 </div>
 
